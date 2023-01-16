@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <center>
+        <header><h1>Register Here</h1></header>
+        <main>
+            <form action="/index.html" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="name">Name : </label></td>
+                            <td><input type="text" name="name" id="name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob">Date of Birth : </label></td>
+                            <td><input type="date" name="dob" id="dob" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Gender">Gender : </label></td>
+                            <td>
+                                <input type="radio" name="Gender" id="gen1" value="Male"><label for="gen1">Male</label>
+                                <input type="radio" name="Gender" id="gen2" value="Female"><label for="gen2">Female</label>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td><label for="phone">Contact No. : </label></td>
+                            <td><input type="tel" name="contact" id="phone" pattern="[0-9]{10}" min=10 max=10 required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Mail Id : </label></td>
+                            <td><input type="email" name="email" id="mail" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="city">Location : </label></td>
+                            <td>
+                                <select name="location" id="city" required>
+                                    <option disabled selected>-- Select City --</option>
+                                    <option value="Noida">Noida</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Gaziabhad">Gaziabhad</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Faridabad">Faridabad</option>
+                                </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td><label for="uname">Username : </label></td>
+                            <td><input type="text" name="username" id="uname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">Password : </label></td>
+                            <td><input type="password" name="passw" id="pass"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="add">Address : </label></td>
+                            <td><textarea name="address" id="add" rows="5" cols="22" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pht">Upload Photo : </label></td>
+                            <td>
+                                <span>
+                                    <fieldset>
+                                        <input type="file" name="photofile" id="pht" required>
+                                    </fieldset>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    <fieldset>
+                                        <legend>Education</legend>
+                                        <input type="checkbox" value="10th" name="class" id="edu10">
+                                        <label for="edu10">10th Class</label><br>
+                                        <input type="checkbox" value="12th" name="class" id="edu12">
+                                        <label for="edu12">12th Class</label><br>
+                                        <input type="checkbox" value="Graduation" name="class" id="eduGrad">
+                                        <label for="eduGrad">Graduation</label><br>
+                                        <input type="checkbox" value="Post Graduation" name="class" id="eduPost">
+                                        <label for="eduPost">Post Graduation</label>
+                                    </fieldset>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <br>
+                                <input type="submit" value="submit">&nbsp;&nbsp;<input type="reset" value="reset"></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                Already a user ? <a href="/index.html">Login here</a>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </form>
+        </main>
+    </center>
+</body>
+</html>
